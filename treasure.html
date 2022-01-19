@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Treasure</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+
+        <h1>Find the Treasure by prasanna arla</h1>
+
+        <p style="background-color: rgb(188, 136, 231); color: rgb(9, 83, 55);">Click on the squares to find the
+            treasure.</p>
+        <p id="clicks" style="background-color:rgb(55, 223, 97);color: rgb(153, 131, 35);">Number of clicks is zero.</p>
+        <p id="distance" style="background: rgb(221, 181, 211);color: rgb(0, 83, 139);">Distance is unknown.</p>
+
+    </div>
+
+    <div class='container'>
+
+        <div class='row'>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width: 1in;" id="img0"
+                    onclick="makeGuess(0)"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width: 1in;" id="img1"
+                    onclick="makeGuess(1)"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width: 1in;" id="img2"
+                    onclick="makeGuess(2)"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width: 1in;" id="img3"
+                    onclick="makeGuess(3)"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width: 1in;" id="img4"
+                    onclick="makeGuess(4)"> </div>
+        </div>
+    </div>
+    <br>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(5)"
+                    id="img5"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(6)"
+                    id="img6"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(7)"
+                    id="img7"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(8)"
+                    id="img8"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(9)"
+                    id="img9"> </div>
+        </div>
+    </div>
+    <br>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(10)"
+                    id="img10"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(11)"
+                    id="img11"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(12)"
+                    id="img12"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(13)"
+                    id="img13"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(14)"
+                    id="img14"> </div>
+        </div>
+    </div>
+    <br>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(15)"
+                    id="img15"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(16)"
+                    id="img16"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(17)"
+                    id="img17"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(18)"
+                    id="img18"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(19)"
+                    id="img19"> </div>
+        </div>
+    </div>
+    <br>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(20)"
+                    id="img20"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(21)"
+                    id="img21"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(22)"
+                    id="img22"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(23)"
+                    id="img23"> </div>
+            <div class='col-sm-2'> <img src="images/dusty image.jpg" style="height: 1in; width:  1in;" onclick="makeGuess(24)"
+                    id="img24"> </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <script>
+
+        var ids = ["img0", "img1", "img2", "img3", "img4",
+            "img5", "img6", "img7", "img8", "img9",
+            "img10", "img11", "img12", "img13", "img14",
+            "img15", "img16", "img17", "img18", "img19",
+            "img20", "img21", "img22", "img23", "img24"];
+
+        var clickCount = 0;
+        var treasureLocation = 18;
+        var treasureLocation = getRandomIntInclusive(0, 24);
+        console.log(treasureLocation);
+
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min); 
+        }
+        function newGame() {
+            var clickCount = 0;
+            var treasureLocation = getRandomIntInclusive(0, 24);
+            console.log(treasureLocation);
+            document.getElementById("clicks").innerHTML = "Number of clicks is " + clickCount + ".";
+
+            document.getElementById("distance").innerHTML = "Distance is unknown.";
+        }
+
+        function makeGuess(position) {
+
+            id = ids[position];
+            imageElement = document.getElementById(id);
+
+            if (position == treasureLocation) {
+                imageElement.src = "images/jewels image.jpg"
+            }
+            else {
+                imageElement.src = "images/empty box.jpg"
+            }
+
+            clickCount++;
+
+            document.getElementById("clicks").innerHTML = "Number of clicks is " + clickCount + ".";
+
+            document.getElementById("distance").innerHTML = "Distance is " + distance(position, treasureLocation) + ".";
+
+        }
+
+        function distance(pos1, pos2) {
+
+            var a =
+                [
+                    [0, 1, 2, 3, 4],
+                    [5, 6, 7, 8, 9],
+                    [10, 11, 12, 13, 14],
+                    [15, 16, 17, 18, 19],
+                    [20, 21, 22, 23, 24]
+                ]
+            var x1 = 0, y1 = 0, x2 = 0, y2 = 0;
+
+            for (var i = 0; i < 5; i++) {
+                for (var j = 0; j < 5; j++)
+                if (a[i][j] == pos1) {
+                    x1 = i;
+                    y1 = j;
+                    break;
+                }
+            }
+
+            for (var i = 0; i < 5; i++) {
+                for (var j = 0; j < 5; j++)
+                if (a[i][j] == pos2) {
+                    x2 = i;
+                    y2 = j;
+                    break;
+                }
+            }
+
+            var dis = Math.abs(x2-x1) + Math.abs(y2-y1);
+            return dis;
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

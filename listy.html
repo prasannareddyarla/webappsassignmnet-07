@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	 <head> 
+		 <title>List of items</title>
+
+
+	<style>
+    .flex-container {
+      display: flex;  flex-direction:row;
+      background-color: rgb(212, 0, 255);
+  }
+
+.flex-container > div {  /*div children of the flex container*/
+  background-color: #f1f1f1; 
+  margin: 10px;  padding: 20px;  font-size: 30px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) { 
+	 .flex-container{
+		 flex-direction:column;
+		 background-color: green;
+	  }
+	}
+</style></head>
+
+
+
+<body>
+
+	<h2>prasanna arla builds a list</h2>
+
+	<input id= "input" type = "text"></input>
+
+		<div class="flex-container" id="target">
+		  <div class= "listy">row item a</div>   
+		  <div class= "listy">row item b</div>  
+		  <div class= "listy">row item c</div>  
+          
+		</div>
+
+	<p> Press the button to create an new element of type div and then add it to the container.
+		</p>
+        
+		<button onclick="makeNewDiv()">Add one</button>
+
+
+</body>
+<script>
+	function makeNewDiv(){
+		/* make the div and its text */
+		let element = document.createElement("div")
+		element.innerHTML =  document.getElementById("input").value
+		element.className = "listy"
+
+		/* add it to the container */
+		var listyItems = document.getElementsByClassName("listy")
+		var check = 0
+        if(listyItems.length>9){
+
+			for ( let item of listyItems)
+			{
+				console.log(item.innerHTML)
+				if(item.innerHTML === document.getElementById("input").value)
+				{
+					item.remove();
+					console.log("We are getting rid of duplicates.");
+					check=1;
+					break;
+				}
+			}
+			if(check==0) {
+                var itemtoberemoved = getRandomIntInclusive(0, 9);
+				console.log(itemtoberemoved);
+
+				listyItems[itemtoberemoved].remove();
+				console.log("We get rid of the " + itemtoberemoved + " item.");
+				}
+
+		}
+
+
+		/* add it to the container */
+		document.getElementById('target').appendChild(element)
+
+	}
+    function getRandomIntInclusive(min, max) {
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min + 1) + min); 
+    }
+</script>
+</html>	 
